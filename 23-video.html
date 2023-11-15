@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <div>
+            <h1>Book Store</h1>
+            <p>This is My Book Store, Welcome.</p>
+        </div>
+        <!-- Video -->
+        <!-- 
+            You can Put a Warning Text in the video tag that shows up in case the used Browser Doesn't support video tag
+        -->
+        <!-- Attributes -->
+        <!-- 
+            src => Video Source
+            type => MME Type (mp4 => video/mp4)
+            width & height => To adjust the size of the video
+            controls => To make the video appears in the page with controlling buttons
+            autoplay => Once The page is loaded The video starts automatically
+            loop => Makes The video repeats Once it's Done
+            muted => Makes The video muted By Default when the page is loaded
+            poster => An Image That Shows When The Video Isn't Loaded Yet
+        -->
+        <video controls loop muted autoplay width="40%" poster="images/semantic-elements.jpeg">
+            <source src="videos/vid.mp4" type="video/mp4">
+            Your Browser Doesn't support Video Files.
+            <!-- 
+                To add Translation file with the extension "vtt => video text track"
+                kind => The Type of the track file
+                lang => The used language 
+                label => Label Of The File
+            -->
+            <track src="example.vtt" kind="subtitles" lang="en" label="English">
+        </video>
+    </body>
+</html>
