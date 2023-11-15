@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my book store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <!-- Attributes -->
+            <!-- 
+                readonly => Disable editing the content of the input
+                disabled => Disable editing the content of the input but without sending the data
+                autofocus => to make a focus automatically on the specified input once the page is loaded
+                minlenght => to specifie the minimum of charachters that can be on the input
+                maxlenght => to specifie the maximum of charachters that can be on the input
+            -->
+            <div>
+                <label>Username: </label>
+                <input type="text" name="user" required placeholder="Username" value="Hamza" autofocus readonly>
+            </div>
+            <br>
+            <div>
+                <label>Password: </label>
+                <input type="password" name="pass" minlength="3" maxlength="15" required placeholder="Enter a complex Password">
+            </div>
+            <br>
+            <div>
+                <label>Email: </label>
+                <input type="email" name="email" disabled required placeholder="Enter a Valid Email" value="test@gmail.com">
+            </div>
+            <br>
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset"> 
+        </form>
+    </body>
+</html>
