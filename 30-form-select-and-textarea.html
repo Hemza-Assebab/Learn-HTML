@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <form>
+            <label for="book">Choose Book</label>
+            <!-- Attributes -->
+            <!--
+                multiple => Makes you choose Between more than option (multiple is for select)
+                selected => makes an option already selected by default
+            -->
+
+            <!-- Select -->
+            <!-- select is an element that we use to choose between a lot of options -->
+            <select name="book" id="book">
+                <!-- optgroup -->
+                <!-- You can devide between options with optgroup element -->
+                <!-- You can give a name to a specified group by putting it on the attr label of the optgroup -->
+                <optgroup label="Romantic">
+                    <!-- option -->
+                    <!-- option is an element that is inside of the select element and we put inside of it the option that we want to be choosed -->
+                    <!-- option element have an attribute "value" we put on it the value of the option -->
+                    <option value="1">Book 1</option>
+                    <option value="2">Book 2</option>
+                    <option value="3">Book 3</option>
+                </optgroup>
+                <optgroup label="Drama">
+                    <option value="4" selected>Book 4</option>
+                    <option value="5">Book 5</option>
+                    <option value="6">Book 6</option>
+                </optgroup>
+            </select>
+            <hr>
+            <!-- textarea -->
+            <!-- Is a size adjustable input -->
+            <!-- Attributes -->
+            <!-- 
+                cols => To adjust the width of the textarea
+                rows => To adjust the height of the textarea
+            -->
+            <textarea name="subject" id="" placeholder="Type the subject here" cols="40" rows="20"></textarea>
+            <br>
+            <input type="submit" value="Validate">
+        </form>
+    </body>
+</html>
