@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <h1>Book Store</h1>
+        <p>This is My Book Store, Welcome.</p>
+        <!-- Table -->
+        <!-- We use Table To Show Data -->
+        <!-- 
+            thead => Table Header
+            tbody => Table Body
+            tfoot => Table Footer
+            tr => Table Row
+            td => Table Data
+            th => Table Head
+        -->
+
+        <!-- Attributes -->
+        <!-- 
+            border="" => To Give The Table a Border
+            width  => To Adjust The Width Of the Table
+            cellpadding =>  To give Padding To Cells
+        -->
+
+        <!-- Merging Cells -->
+        <!--
+            colspan => to merge cells
+            rowspan => to merge rows
+        -->
+        <table cellpadding="5px" border="1" width="100%">
+            <!-- In The Caption element We Put The Title of The Table -->
+            <caption>Students Marks</caption>
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hamza</td>
+                    <td>Assebab</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Hamza</td>
+                    <td>Assebab</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Hamza</td>
+                    <td>Assebab</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Hamza</td>
+                    <td>Assebab</td>
+                    <td>60</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- <td>One</td> -->
+                    <td colspan="3">240</td>
+                    <!-- <td>Three</td> -->
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Example of merging rows -->
+        <br>
+        <table border="1" width="100%" cellpadding="10px">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Ajay</td>
+                <!-- This cell will take up space on
+                    two rows -->
+                <td rowspan="2">24</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+            </tr>
+        </table>
+    </body>
+</html>
