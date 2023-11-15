@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <!-- Attributes -->
+        <!--
+            action => in this attr you specifiy where you want to send the collected data (Path of another page Ex: data.php)
+            name => give a name to the input
+            method => The way to send data (GET or POST)
+        -->
+        <!--
+            GET method  => Shows the data in the "URL" after clicking submit
+            POST method => Hides The data from the "URL" after clicking submit
+        -->
+        <form action="" method="POST">
+            <div>
+                <label>Username: </label>
+                <input type="text" name="user" required placeholder="Username">
+            </div>
+            <br>
+            <div>
+                <label>Password: </label>
+                <input type="password" name="pass" required placeholder="Enter a complex Password">
+            </div>
+            <br>
+            <div>
+                <label>Email: </label>
+                <input type="email" name="email" required placeholder="Enter a Valid Email" value="test@gmail.com">
+            </div>
+            <br>
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>
