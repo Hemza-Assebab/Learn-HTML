@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <div>
+            <h1>Book Store</h1>
+            <p>This is My Book Store, Welcome</p>
+        </div>
+        <!-- Audio -->
+        <!-- 
+            # With source element you can set the source of the audio file without the attribute src in the audio
+              element (but it's neccesary on source element)
+              And you can also use more than one source element an a one audio element
+            # Using more Than one source tag makes the browser search for the best optimal audio file that can run
+              without a problem
+        -->
+        <!-- 
+            You can Put a Warning Text in the audio tag that shows in case the used Browser Doesn't support audio tag
+        -->
+        <!-- Attributes -->
+        <!-- 
+            src => Source of the audio file
+            type => To specifie the MME Type (mp3 => audio/mpeg)
+            controls => To make the audio appears in the page with controlling buttons
+            autoplay => Once The page is loaded The audio file starts automatically
+            loop => Makes The audio repeats Once it's Done
+            muted => Makes The audio muted By Default when the page is loaded
+        -->
+        <audio controls autoplay loop muted>
+            <source src="audios/music.mp3" type="audio/mpeg">
+            Your Browse Doesn't Support Audio Files
+        </audio>
+    </body>
+</html>
