@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <!-- Form Attributes -->
+        <!-- 
+            novalidate => To Stop The Validation process in for example required inputs
+            target="_blank" => Opens a new tab and sends data on it
+        -->
+        <form novalidate target="_blank">
+            <div>
+                <label for="pic">Upload</label>
+                <input type="file" name="image" id="pic">
+            </div>
+            <br>
+            <div>
+                <label for="sch">Search</label>
+                <input type="search" name="searchfor"  id="sch" required>
+            </div>
+            <br>
+            <!-- datalist -->
+            <!-- 
+                We First Create an input with attr list="give it a value to link it with datalist"
+                then we create a datalist element and we give it an id with the same value of list attr
+                then inside of datalist we create option elements and give it it's own value to choose 
+            -->
+            <input list="programming" name="prog">
+            <datalist id="programming">
+                <option value="HTML">
+                <option value="PHP">
+                <option value="C++">
+                <option value="C#">
+                <option value="JAVA">
+                <option value="RUST">
+            </datalist>
+            <hr>
+            <input type="submit" value="Save">
+            <input type="reset" value="Empty">
+        </form>
+    </body>
+</html>
