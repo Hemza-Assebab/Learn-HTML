@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <form>
+            <!-- radio -->
+            <!-- radio is a list of options but you're allowed to choose only one option -->
+
+            <!-- Attributes -->
+            <!-- 
+                checked => To make an option checked by default
+                for => it's used in the label element to relate between the label and its input(by giving an "id" to the input and giving the attr "for" the value of the id of the input)
+            -->
+            <div>
+                <input id="win" type="radio" name="os" value="Windows" checked>
+                <label for="win">Windows</label>
+            </div>
+            <br>
+            <div>
+                <input id="lin" type="radio" name="os" value="Linux">
+                <label for="lin">Linux</label>
+            </div>
+            <br>
+            <div>
+                <input id="mac" type="radio" name="os" value="Mac">
+                <label for="mac">Mac</label>
+            </div>
+            <br>
+            <!-- Checkbox -->
+
+            <!-- Attributes -->
+            <!-- 
+                checked => To make an option checked by default (In the checkbox you can use it in multiple checkboxs but in the radio you only can give it to one option)
+                for => it's used the label element to relate between the label and its input(by giving an "id" to the input and giving the attr "for" the value of the id of the input)
+            -->
+            <h2>What's Your Favourite Country</h2>
+            <div>
+                <input type="checkbox" name="country" value="Morocco" id="ma">
+                <label for="ma">Morocco</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="country" value="Tunisia" id="tu">
+                <label for="tu">Tunisia</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="country" value="Algeria" id="dz">
+                <label for="dz">Algeria</label>
+            </div>
+            <br>
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
