@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is My Book Store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <!-- New input Types -->
+            <div>
+                <!-- input with type hidden makes the input invisible -->
+                <input type="hidden">
+            </div>
+            <br>
+            <div>
+                <label for="">Choose Your Favourite Color</label>
+                <!-- Input with type color makes the user choose what color he wants -->
+                <input type="color" name="color">
+            </div>
+            <br>
+            <div>
+                <label>Range</label>
+                <!-- Range -->
+                <!-- Attributes -->
+                <!--
+                    min => To set the minimum value of the range
+                    max => To set the maximum value of the range
+                    step => To choose how much of value a step could take EX: 1 step = 20
+                    value => To specifiy the default value of the range
+                -->
+                <input type="range" name="range" min="0" max="100" step="20" value="0">
+            </div>
+            <br>
+            <div>
+                <label>Number</label>
+                <!-- Number -->
+                <!--
+                    min => To set the minimum value of the numbers
+                    max => To set the maximum value of the numbers
+                    step => To choose how much of value a step could take EX: 1 step = 10
+                    value => To specifiy the default value of the numbers
+                -->
+                <input type="number" name="num" min="0" max="100" step="10" value="50">
+            </div>
+            <br>
+            <input type="submit" value="Save">
+            <!-- input with type reset resets all the inputs fields -->
+            <input type="reset" value="Reset"> 
+        </form>
+    </body>
+</html>
